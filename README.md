@@ -13,6 +13,7 @@ Contents
 - [Tests](#tests)
 - [Code style](#code-style)
 - [Static code analysis](#static-code-analysis)
+- [Release](#release)
 - [References](#references)
 - [License](#license)
 

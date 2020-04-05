@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
   }
 
   @Override public boolean dispatchTouchEvent(MotionEvent event) {
-    return touch.dispatchTouchEvent(event) || super.dispatchTouchEvent(event);
+    touch.dispatchTouchEvent(event);
+    return super.dispatchTouchEvent(event);
   }
 
   @Override protected void onPause() {

@@ -1,9 +1,9 @@
 package com.github.pwittchen.touch.library;
 
 public class TouchEvent {
-  private final float x;
-  private final float y;
-  private final TouchType type;
+  private final float x; // NOPMD
+  private final float y; // NOPMD
+  private final TouchType type; // NOPMD
 
   public TouchEvent(final float x, final float y, final TouchType type) {
     this.x = x;

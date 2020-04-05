@@ -3,13 +3,11 @@ Android library, which allows to monitor raw touch events on the screen of the d
 
  Current Branch | Branch  | Artifact Id | Build Status  | Maven Central |
 |:--------------:|:-------:|:-----------:|:-------------:|:-------------:|
-| :ballot_box_with_check: | [`RxJava2.x`](https://github.com/pwittchen/swipe/tree/RxJava2.x) | `swipe-rx2` | ![Build Status for RxJava2.x](https://img.shields.io/travis/pwittchen/swipe/RxJava2.x.svg?style=flat-square) | ![Maven Central](https://img.shields.io/maven-central/v/com.github.pwittchen/touch-rx2.svg?style=flat-square) |
+| :ballot_box_with_check: | [`RxJava2.x`](https://github.com/pwittchen/touch/tree/RxJava2.x) | `swipe-rx2` | ![Build Status for RxJava2.x](https://img.shields.io/travis/pwittchen/touch/RxJava2.x.svg?style=flat-square) | ![Maven Central](https://img.shields.io/maven-central/v/com.github.pwittchen/touch-rx2.svg?style=flat-square) |
 
 Contents
 --------
 - [Usage](#usage)
-- [Configuring swipe threshold](#configuring-swipe-threshold)
-- [Listening to several events](#listening-to-several-events)
 - [Example](#example)
 - [Download](#download)
 - [Tests](#tests)
@@ -21,14 +19,14 @@ Contents
 Usage
 -----
 
-**Step 1**: Create `Swipe` attribute and `Subscription` in the `Activity`:
+**Step 1**: Create `Touch` attribute and `Disposable` in the `Activity`:
 
 ```java
-private Swipe swipe;
+private Touch touch;
 private Disposable disposable;
 ```
 
-**Step 2**: Initialize `Swipe` object and subscribe `Observable`:
+**Step 2**: Initialize `Touch` object and subscribe `Flowable`:
 
 ```java
 @Override protected void onCreate(Bundle savedInstanceState) {
@@ -100,7 +98,7 @@ You can depend on the library through Maven:
 ```xml
 <dependency>
     <groupId>com.github.pwittchen</groupId>
-    <artifactId>swipe-rx2</artifactId>
+    <artifactId>touch-rx2</artifactId>
     <version>x.y.z</version>
 </dependency>
 ```

@@ -1,0 +1,31 @@
+language: android
+
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-29
+    - android-29
+    - extra-android-support
+    - extra-android-m2repository
+  licenses:
+    - android-sdk-license-5be876d5
+    - android-sdk-license-c81a61d9
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
+
+jdk: oraclejdk8
+
+before_install:
+  - yes | sdkmanager "platforms;android-29"
+
+install:
+  - true
+
+script:
+  - ./gradlew clean build test check
+
+cache:
+  directories:
+    - $HOME/.m2

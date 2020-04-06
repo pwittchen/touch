@@ -1,8 +1,8 @@
 # touch
 Android library, which allows to monitor raw touch events on the screen of the device with RxJava
 
- Current Branch | Branch  | Artifact Id  | Maven Central | CI |
-|:--------------:|:-------:|:-----------:|:-------------:|:--:|
+ Current Branch | Branch  | Artifact Id  | Maven Central | CI build |
+|:--------------:|:-------:|:-----------:|:-------------:|:--------:|
 | :ballot_box_with_check: | [`RxJava2.x`](https://github.com/pwittchen/touch/tree/RxJava2.x) | `touch-rx2` | ![Maven Central](https://img.shields.io/maven-central/v/com.github.pwittchen/touch-rx2.svg?style=flat-square) | ![Android CI](https://github.com/pwittchen/touch/workflows/Android%20CI/badge.svg?branch=RxJava2.x) |
 
 Contents
